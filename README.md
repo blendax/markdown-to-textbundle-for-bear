@@ -12,6 +12,10 @@
 
 exported file will be in `your-markdown-folder-export`
 
+# Known limitations
+If you use yaml frontmatter with an empy tag like: `tags:` the program will give an error.
+You can remove the empty `tags:`in that file to make it work. Look at the log what file that the converter tries to convert.
+
 # Features
 - Copy attachments to the text bundle
 - Support obsidian's `![[file]]` format
