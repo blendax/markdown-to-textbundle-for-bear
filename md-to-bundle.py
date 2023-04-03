@@ -58,6 +58,7 @@ def parse_front_matter(content):
 
 
 def md_to_bundle(md_path, add_tag, tag, export_dir):
+    print(f'Will read file: {md_path}')
     content = read_file(md_path)
     front_matter, end_index = parse_front_matter(content)
     basename = os.path.basename(md_path)
